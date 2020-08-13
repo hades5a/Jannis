@@ -1,0 +1,12 @@
+<div class="container">
+    <ul class="collection with-header">
+        <li class="collection-header"><h4>Todoliste</h4></li>
+        <li class="collection-item" *ngFor="let todo of todoliste">{{todo}}</li>
+    </ul>
+
+    <div class="row">
+        <input type="text" [(ngModel)]="newTodo">
+        <button class="btn" (click)="myFunction()">Todo hinzufügen</button>
+    </div>
+</div>
+
